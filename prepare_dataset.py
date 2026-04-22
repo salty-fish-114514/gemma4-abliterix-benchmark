@@ -27,7 +27,7 @@ def prepare_all_datasets(output_dir: str = "./eval_datasets"):
         "humaneval": ("openai_humaneval", None, "test", 1.0, True),
     }
     
-    # 检查 HF_TOKEN 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
+    # 检查 HF_TOKEN
     hf_token = os.getenv("HF_TOKEN")
     if not hf_token:
         print("⚠️  Warning: HF_TOKEN 未设置，gpqa_diamond 将跳过或失败")
